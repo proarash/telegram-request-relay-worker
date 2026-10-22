@@ -1,0 +1,17 @@
+{
+  "name": "satan-watchdog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --env-file=.env",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "webhook:set": "node scripts/set-webhook.mjs",
+    "secrets:push": "node scripts/push-secrets.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "wrangler": "^4.118.0"
+  }
+}
